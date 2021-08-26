@@ -37,7 +37,7 @@ h1{
     font-size: 1.8rem;
     line-height: 1.2;
     text-align: center;
-    color: currentColor;
+    color: dimgray;
 }
 .list-container, .data-container{
     padding: 10px;
