@@ -3,14 +3,14 @@ var isValid = false;
 const btn = document.getElementById('btn');
       btn.addEventListener('click', validator, true);
 
-// campos de texto
+      // campos de texto
 let nombre   = document.getElementById('input1');
 let apellido = document.getElementById('input2'); 
 
-
+// guardar lista en localStorage
 
 function validator(){
-
+    
     // validador de campo vacio
     if(nombre.value === '' || apellido.value === ''){
         isValid = false;
@@ -24,20 +24,39 @@ function validator(){
         }else{
             console.log('todas las validaciones aprobadas');
             isValid = true;
-
+            
             addPersona();
+            // autoFocus();
         }
     }
     
 }
 
+// array para guardar los datos del ls y luego renderizarlos
+const storageArray = [];
+
 function addPersona(){
-    // let nameUpp = nombre.value[0].toUpperCase + nombre.value.slice(1);
-    // let lastNameUpp = apellido.value[0].toUpperCase + apellido.value.slice(1);
+    // mayuscula a la primera letra
     let nameUpp = nombre.value.replace(/\b\w/g, l => l.toUpperCase());
     let lastNameUpp = apellido.value.replace(/\b\w/g, l => l.toUpperCase());
+    
+    let fullName;
+    
+    // adding new person
     const newPersona = new Persona(nameUpp, lastNameUpp);
     personas.push(newPersona);
+    fullName = `${nameUpp} ${lastNameUpp}`;
+    storageArray.push(fullName);
+
+// EN PROCESO
+    if(fullName){
+        console.log('if del fullname para localstorage');
+
+        cache(storageArray);
+
+        console.log(localStorage);
+    }
     renderizar();
     cleaning();
-}
+    autoFocus();
+};

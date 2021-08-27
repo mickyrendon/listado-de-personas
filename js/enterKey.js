@@ -14,3 +14,13 @@ function enter(event){
 
     // console.log(`imprimiendo tecla: ${key}`);
 }
+
+function autoFocus(){
+    // if(nombre.autofocus){
+        nombre.autofocus = true;
+        console.log(nombre.autofocus);
+    // }else{
+    //     nombre.autoFocus = true;
+    //     console.log('autofocus');
+    // }
+}
