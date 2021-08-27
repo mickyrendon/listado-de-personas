@@ -15,18 +15,19 @@ function validator(){
     if(nombre.value === '' || apellido.value === ''){
         isValid = false;
         console.log('validacion 1 no aprobada');
-        alert('ingrese nombre y apellido sin acentos')
+        alert('ingrese nombre y apellido sin acentos');
+        autoFocus();
     }else{
         if(!alfa.test(nombre.value) || !alfa.test(apellido.value)){
             isValid = false;
             console.log('validacion 2 no aprobada');
             alert('ingrese solo letras');
+            autoFocus();
         }else{
             console.log('todas las validaciones aprobadas');
             isValid = true;
             
             addPersona();
-            // autoFocus();
         }
     }
     

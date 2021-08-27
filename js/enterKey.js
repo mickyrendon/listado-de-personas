@@ -9,18 +9,8 @@ function enter(event){
         // pattern();
         validator();
         cleaning();
+        autoFocus();
         console.log(`tecla enter activada`);
-    }
-
-    // console.log(`imprimiendo tecla: ${key}`);
+    };
 }
 
-function autoFocus(){
-    // if(nombre.autofocus){
-        nombre.autofocus = true;
-        console.log(nombre.autofocus);
-    // }else{
-    //     nombre.autoFocus = true;
-    //     console.log('autofocus');
-    // }
-}
