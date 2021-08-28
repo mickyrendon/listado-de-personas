@@ -9,7 +9,7 @@ h1, .list-container, .data-container, .btn-container{
     width: 100%;
 }
 body{
-    height:600px;
+    min-height:600px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,14 +18,14 @@ body{
     background-size:cover;
     background-position: center;
     background-attachment: fixed;
-    background-repeat: none;
+    background-repeat: no-repeat;
     
 }
 main{
     margin-top: 60px;
     padding: 20px;
     width: 400px;
-    height: 600px;
+    min-height: 600px;
     display: flex;
     flex-flow: column nowrap;
     justify-content:space-evenly;
@@ -41,18 +41,25 @@ h1{
 }
 .list-container, .data-container{
     padding: 10px;
-    /* width: 600px; */
-    height: 200px;
     border: 1px solid rgba(104, 4, 187, 0.733);
 }
+.list-container{
+    padding-right: 0;
+    padding-bottom: 1px;
+    min-height: 200px;
+}
 ol{
-    padding-left: 20px;
+    padding-left: 25px;
+    height: 100%;
+    columns: 2;
 }
 li{
-    margin: 2px 0;
+    margin: 0 2px;
+    line-height: 1.5;
+    break-inside: avoid; 
 }
 .data-container{
-    /* width: 400px; */
+    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-around ;
@@ -83,4 +90,32 @@ button{
     width: 80px;
     height: 40px;
     /* border-radius: 50%; */
+}
+
+/* mediaqueries pantallas menores a 400px */
+@media (max-width: 400px){
+    body{
+        height: 800px;
+    }
+    main{
+        margin: 0;
+        max-width: 350px;
+        height: 100%;
+        /* min-width: 120px; */
+    }
+    ol{
+        padding-left: 25px;
+        height: 100%;
+        display: block;
+        columns: 1;
+    }
+    li{
+        break-inside:unset; 
+    }
+    .inputs-container{
+        margin: 0;
+    }
+    label{
+        width: 100%;
+    }
 }
