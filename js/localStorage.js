@@ -7,8 +7,18 @@ function cache(storageArray){
         console.log('nuevo elemento en el ls ' + [i]);
     }
 }
-
 // btn borrar local storage
 document.getElementById('btn-delete').addEventListener('click', () => {
     localStorage.clear();
+    window.location.reload();
 })
+
+
+/*  
+features del localstorage 
+    al recargar mostrar la lista que esta guardada en el ls y al agregar contenido nuevo no pisar lo que hay en ls
+
+    btn limpiar lista
+        // limpiar la lista del html
+        
+*/
