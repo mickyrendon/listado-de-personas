@@ -7,18 +7,40 @@ function cache(storageArray){
         console.log('nuevo elemento en el ls ' + [i]);
     }
 }
+
+// verificando si el localStorage tiene contenido para renderizarlo y ponerlos como lista
+function localStorageValidator(){
+    let texto = '';
+    
+    if(localStorage.length == 0){
+        console.log("storage vacio");
+    }else{
+        console.log('storage lleno');
+        // let localSList = JSON.stringify(localStorage.getItem());
+        Object.keys(localStorage).forEach(function(key){
+            
+            const lsKeys = localStorage.getItem(key);
+            texto += `<li>${lsKeys}</li>`;
+        });
+    }
+    document.getElementById('list').innerHTML = texto;
+    console.log(`lista del localStorage renderizada`);
+}
+
 // btn borrar local storage
 document.getElementById('btn-delete').addEventListener('click', () => {
     localStorage.clear();
     window.location.reload();
+    cleaning();
 })
 
 
 /*  
 features del localstorage 
-    al recargar mostrar la lista que esta guardada en el ls y al agregar contenido nuevo no pisar lo que hay en ls
+    // al recargar mostrar la lista que esta guardada en el ls
+     al agregar contenido nuevo no pisar lo que hay en ls
 
     btn limpiar lista
         // limpiar la lista del html
-        
+
 */
