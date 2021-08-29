@@ -22,7 +22,7 @@ function validator(){
             isValid = false;
             console.log('validacion 2 no aprobada');
             alert('ingrese solo letras');
-            autoFocus();
+            autoFocus();    
         }else{
             console.log('todas las validaciones aprobadas');
             isValid = true;
