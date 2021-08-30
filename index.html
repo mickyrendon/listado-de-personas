@@ -14,18 +14,41 @@
         <div class="list-container">
             <ol id="list"></ol>
         </div>
+        <!-- TODO: terminar este dropdown menu-->
+        <div class="menu">
+            <label for="menu">
+                <input type="checkbox" name="menu" id="menu" class="menu">
+            </label>
+            <ul class="menu-options">
+                 <button>
+                     <li value="Eliminar">Eliminar</li>
+                </button> 
+                 <button>
+                     <li value="Editar">Editar</li>
+                </button> 
+                 <button>
+                     <li value="Compartir">Compartir</li>
+                </button> 
+                 <button>
+                     <li value="Imprimir">Descargar</li>
+                </button> 
+                 <button>
+                     <li value="Imprimir">Imprimir</li>
+                </button> 
+            </ul>            
+        </div>
         <div class="data-container">
             <div class="inputs-container">
-                <label for="input1">
+                <label for="input1" class="inputs-label">
                     <input id="input1" type="text" placeholder="Nombre" autofocus></input>
                 </label>
-                <label for="input2">
+                <label for="input2" class="inputs-label">
                     <input id="input2" type="text" placeholder="Apellido"></input>
                 </label>
             </div>
             <div class="btn-container">
+                <!-- <button id="btn-delete">Limpiar lista</button> -->
                 <button id="btn">Enter</button>
-                <button id="btn-delete">Limpiar lista</button>
             </div>
         </div>
     </main>

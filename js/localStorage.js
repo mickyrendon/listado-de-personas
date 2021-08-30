@@ -32,15 +32,4 @@ document.getElementById('btn-delete').addEventListener('click', () => {
     localStorage.clear();
     window.location.reload();
     cleaning();
-})
-
-
-/*  
-features del localstorage 
-    // al recargar mostrar la lista que esta guardada en el ls
-     al agregar contenido nuevo no pisar lo que hay en ls
-
-    btn limpiar lista
-        // limpiar la lista del html
-
-*/
+});
