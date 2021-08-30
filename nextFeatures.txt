@@ -1,0 +1,8 @@
+features del localstorage 
+   
+    //TODO: 
+        -al agregar contenido nuevo no pisar lo que hay en ls
+        -dropdown menu
+            -agregar la opcion de descargar/compartir-imprimir lista
+            -permitir editar las listas guardadas
+        -titulo editable
