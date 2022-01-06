@@ -13,8 +13,9 @@ welcome! this is a proyect for a class of "universidad js" by Ubaldo Acosta foun
 
 
 # screenshots
-![imagen](https://user-images.githubusercontent.com/64873799/148311186-8be758c7-4603-409e-bc07-c5deb793e616.png)
+![imagen](https://user-images.githubusercontent.com/64873799/148429395-0987b65b-a3fe-40b0-8e8d-eb17717191b1.png)
+![imagen](https://user-images.githubusercontent.com/64873799/148429182-6a079d7b-fb13-46da-8406-094f7de9705c.png)
 
 buttons into the red circle are features therefore doesn't work
 
-![imagen](https://user-images.githubusercontent.com/64873799/148311529-39159079-deea-470a-b413-2818624b9515.png)
+![imagen](https://user-images.githubusercontent.com/64873799/148428867-b9fdf233-0b61-4eb2-9631-bf12b799a805.png)
