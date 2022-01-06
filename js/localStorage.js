@@ -28,8 +28,8 @@ function localStorageValidator(){
 }
 
 // btn borrar local storage
-document.getElementById('btn-delete').addEventListener('click', () => {
-    localStorage.clear();
-    window.location.reload();
-    cleaning();
-});
+// document.getElementById('btn-delete').addEventListener('click', () => {
+//     localStorage.clear();
+//     window.location.reload();
+//     cleaning();
+// });
