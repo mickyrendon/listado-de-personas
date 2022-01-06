@@ -8,12 +8,17 @@
 h1, .list-container, .menu, .data-container, .btn-container{
     width: 100%;
 }
-body, main, .data-container, .menu, .inputs-container, label, .btn-container{
+body, main, .data-container, .menu, .menu-checkbox, .inputs-container, label, .btn-container{
     display:flex;
 }
 .list-container, .menu, .data-container, .menu-options{
     padding: 10px;
     border: 1px solid rgba(104, 4, 187, 0.733);
+}
+button{
+    margin: 0.3rem;
+    width: 10rem;
+    height: 3rem;
 }
 body{
     min-height:600px;
@@ -28,7 +33,7 @@ body{
     
 }
 main{
-    margin-top: 60px;
+    margin-top: 1rem;
     padding: 20px;
     width: 400px;
     min-height: 600px;
@@ -64,11 +69,27 @@ li{
     flex-direction: column;
     justify-content: space-around ;
 }
+
 .menu{
-    justify-content: flex-end;
+    margin: 1.5rem 0;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.menu-checkbox{
+    margin: 0.5rem;
+    justify-content: center;
+    display: none;
+}
+.bi:hover{
+    cursor:pointer;
+}
+.bi{
+    font-size: 1.4rem;
 }
 .menu-options{
-    /* display: none; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
     list-style: none;
 }
 .inputs-container{
@@ -93,11 +114,6 @@ input{
     justify-content: space-around;
     align-content: center;
     flex-flow: row wrap;
-}
-button{
-    width: 80px;
-    height: 40px;
-    /* border-radius: 50%; */
 }
 
 /* mediaqueries pantallas menores a 400px */
@@ -125,5 +141,8 @@ button{
     }
     label{
         width: 100%;
+    }
+    .menu-checkbox{
+        justify-content: space-between;
     }
 }
