@@ -9,7 +9,7 @@ welcome! this is a proyect for a class of "universidad js" by Ubaldo Acosta foun
 
 # you can check it out on this link 👇
 
-[people list](https://mickyrendon.github.io/listado-de-personas/)
+## [people list](https://mickyrendon.github.io/people-listing/)
 
 
 # screenshots
